@@ -84,7 +84,7 @@ cc.Class({
       this.setStatus(this.STATUS.gliding);
       this.animation = this.getComponent(cc.Animation);
       this.specifiedScaleX = this.node.scaleX;
-      this.minFloorLevel = 50;
+      this.minFloorLevel = -300;
       this.jumpTimer = 0;
       this.attackTimer = 0;
       this.slideTimer = 0;

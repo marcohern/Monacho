@@ -64,20 +64,35 @@ cc.Class({
       this.setInput(event, false);
     },
 
-    onTouchStart(event) {
-      console.log("onTouchStart", event);
+    btnLeftClick(event) {
+      this.setInputValue('right',false);
+      this.setInputValue('left',true);
+      this.buttonUsed = true;
     },
 
-    onTouchMove(event) {
-      console.log("onTouchMove", event);
+    btnRightClick(event) {
+      this.setInputValue('left',false);
+      this.setInputValue('right',true);
+      this.buttonUsed = true;
     },
 
-    onTouchEnd(event) {
-      console.log("onTouchEnd", event);
+    btnStopClick(event) {
+      this.setInputValue('left',false);
+      this.setInputValue('right',false);
+      this.buttonUsed = true;
     },
 
-    onTouchCancel(event) {
-      console.log("onTouchCancel", event);
+    btnJumpClick(event) {
+      this.setInputValue('up',true);
+      this.setInputValue('down',false);
+      this.buttonUsed = true;
+    },
+
+    btnAttackClick(event) {
+      this.setInputValue('attack', true);
+      this.setInputValue('left',false);
+      this.setInputValue('right',false);
+      this.buttonUsed = true;
     },
 
     onLoad () {
@@ -101,29 +116,25 @@ cc.Class({
       };
 
       this.inputUpdated = false;
+      this.buttonUsed = false;
       
       cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
       cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
-
-      cc.systemEvent.on(cc.Node.EventType.TOUCH_START, this.onTouchStart, this);
-      cc.systemEvent.on(cc.Node.EventType.TOUCH_MOVE, this.onTouchMove, this);
-      cc.systemEvent.on(cc.Node.EventType.TOUCH_END, this.onTouchEnd, this);
-      cc.systemEvent.on(cc.Node.EventType.TOUCH_CANCEL, this.onTouchCancel, this);
       console.log("Input.onLoad");
     },
 
     onDestroy() {
       cc.systemEvent.off(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
       cc.systemEvent.off(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
-      
-      cc.systemEvent.off(cc.Node.EventType.TOUCH_START, this.onTouchStart, this);
-      cc.systemEvent.off(cc.Node.EventType.TOUCH_MOVE, this.onTouchMove, this);
-      cc.systemEvent.off(cc.Node.EventType.TOUCH_END, this.onTouchEnd, this);
-      cc.systemEvent.off(cc.Node.EventType.TOUCH_CANCEL, this.onTouchCancel, this);
     },
 
     update(dt)
     {
+      if (this.buttonUsed) {
+        if (this.input.up) this.input.up = false;
+        if (this.input.attack) this.input.attack = false;
+      }
+      this.buttonUsed = false;
       this.inputUpdated = false;
     }
 });
