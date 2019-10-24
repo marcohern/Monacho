@@ -1,0 +1,93 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "slide",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.16666666666666666,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "25d4314c-bdb6-4d81-b6f1-db7f36a7069e"
+            }
+          },
+          {
+            "frame": 0.016666666666666666,
+            "value": {
+              "__uuid__": "4da23f88-82e4-45c1-acb2-5e57008520b1"
+            }
+          },
+          {
+            "frame": 0.03333333333333333,
+            "value": {
+              "__uuid__": "5c91d2b2-b6bd-4045-b1d3-fc72332a74df"
+            }
+          },
+          {
+            "frame": 0.05,
+            "value": {
+              "__uuid__": "88c7414c-b18d-40b2-ab94-98932ae873e2"
+            }
+          },
+          {
+            "frame": 0.06666666666666667,
+            "value": {
+              "__uuid__": "7eb25e99-ba0a-46ed-9319-5c48033c0247"
+            }
+          },
+          {
+            "frame": 0.08333333333333333,
+            "value": {
+              "__uuid__": "1a537245-b692-4410-8510-c6c62cbf1a1b"
+            }
+          },
+          {
+            "frame": 0.1,
+            "value": {
+              "__uuid__": "61ca29fb-32d5-48d7-b68d-ce8e750dc772"
+            }
+          },
+          {
+            "frame": 0.11666666666666667,
+            "value": {
+              "__uuid__": "3e34b324-f371-40cf-aeaf-9bae0d46a679"
+            }
+          },
+          {
+            "frame": 0.13333333333333333,
+            "value": {
+              "__uuid__": "c40be0d3-476a-48b0-84d9-1e17facf789f"
+            }
+          },
+          {
+            "frame": 0.15,
+            "value": {
+              "__uuid__": "04b63d82-e07c-409b-a5f2-6145e06cbad3"
+            }
+          }
+        ]
+      }
+    },
+    "props": {
+      "anchorX": [
+        {
+          "frame": 0,
+          "value": 0.5
+        }
+      ],
+      "anchorY": [
+        {
+          "frame": 0,
+          "value": 0.15
+        }
+      ]
+    }
+  },
+  "events": []
+}

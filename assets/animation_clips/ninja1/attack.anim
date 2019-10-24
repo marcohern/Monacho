@@ -1,0 +1,93 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "attack",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.15,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "2f689228-5291-4072-adbf-4997ff891290"
+            }
+          },
+          {
+            "frame": 0.016666666666666666,
+            "value": {
+              "__uuid__": "613aa95b-9c12-4378-9049-d57ef86a8587"
+            }
+          },
+          {
+            "frame": 0.03333333333333333,
+            "value": {
+              "__uuid__": "f189c7f2-aa25-4a5a-aa16-2e258a7ccace"
+            }
+          },
+          {
+            "frame": 0.05,
+            "value": {
+              "__uuid__": "df122ec5-a739-4882-aa54-fc548497830c"
+            }
+          },
+          {
+            "frame": 0.06666666666666667,
+            "value": {
+              "__uuid__": "deefec83-5ca6-4fe0-8b3f-d02e12759146"
+            }
+          },
+          {
+            "frame": 0.08333333333333333,
+            "value": {
+              "__uuid__": "24ad4c98-4e8e-4778-a0cc-9292d5dc6aeb"
+            }
+          },
+          {
+            "frame": 0.1,
+            "value": {
+              "__uuid__": "f7d8e944-3869-468e-bbfe-3cdcf922d8b2"
+            }
+          },
+          {
+            "frame": 0.11666666666666667,
+            "value": {
+              "__uuid__": "681ec487-4ed2-4951-b14a-07d8e08d34ee"
+            }
+          },
+          {
+            "frame": 0.13333333333333333,
+            "value": {
+              "__uuid__": "60037882-33bf-4bf7-88bb-0b77f2d8cc3c"
+            }
+          }
+        ]
+      }
+    },
+    "props": {
+      "anchorX": [
+        {
+          "frame": 0,
+          "value": 0.27
+        }
+      ],
+      "anchorY": [
+        {
+          "frame": 0,
+          "value": 0.12
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "frame": 0.13333333333333333,
+      "func": "onAttackComplete",
+      "params": []
+    }
+  ]
+}
