@@ -1534,8 +1534,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 100,
-      "height": 40
+      "width": 130,
+      "height": 60
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1546,8 +1546,8 @@
       "__type__": "TypedArray",
       "ctor": "Float32Array",
       "array": [
-        -307.09698486328125,
-        -173.79400634765625,
+        380,
+        -180,
         0,
         0,
         0,
@@ -1574,7 +1574,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Background",
-    "_objFlags": 512,
+    "_objFlags": 0,
     "_parent": {
       "__id__": 32
     },
@@ -1603,8 +1603,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 100,
-      "height": 40
+      "width": 130,
+      "height": 60
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1643,7 +1643,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Label",
-    "_objFlags": 512,
+    "_objFlags": 0,
     "_parent": {
       "__id__": 33
     },
@@ -1718,7 +1718,7 @@
     "_useOriginalSize": false,
     "_string": "Jump",
     "_N$string": "Jump",
-    "_fontSize": 20,
+    "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": false,
     "_N$file": null,
@@ -1914,8 +1914,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 100,
-      "height": 40
+      "width": 130,
+      "height": 60
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1926,8 +1926,8 @@
       "__type__": "TypedArray",
       "ctor": "Float32Array",
       "array": [
-        -177.76600646972656,
-        -173.8979949951172,
+        380,
+        -257,
         0,
         0,
         0,
@@ -1954,7 +1954,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Background",
-    "_objFlags": 512,
+    "_objFlags": 0,
     "_parent": {
       "__id__": 40
     },
@@ -1983,8 +1983,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 100,
-      "height": 40
+      "width": 130,
+      "height": 60
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -2023,7 +2023,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Label",
-    "_objFlags": 512,
+    "_objFlags": 0,
     "_parent": {
       "__id__": 41
     },
@@ -2045,7 +2045,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 100,
+      "width": 124,
       "height": 40
     },
     "_anchorPoint": {
@@ -2098,7 +2098,7 @@
     "_useOriginalSize": false,
     "_string": "Attack",
     "_N$string": "Attack",
-    "_fontSize": 20,
+    "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": false,
     "_N$file": null,
