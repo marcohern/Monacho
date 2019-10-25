@@ -135,7 +135,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Main Camera",
-    "_objFlags": 512,
+    "_objFlags": 0,
     "_parent": {
       "__id__": 2
     },
@@ -187,7 +187,7 @@
       "array": [
         0,
         0,
-        350.2585144042969,
+        342.2532653808594,
         0,
         0,
         0,
@@ -213,7 +213,7 @@
   {
     "__type__": "cc.Node",
     "_name": "btnLeft",
-    "_objFlags": 512,
+    "_objFlags": 0,
     "_parent": {
       "__id__": 3
     },
@@ -251,8 +251,8 @@
       "__type__": "TypedArray",
       "ctor": "Float32Array",
       "array": [
-        -378,
-        -184.052001953125,
+        -403.09698486328125,
+        -246.79400634765625,
         0,
         0,
         0,
@@ -279,7 +279,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Background",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 4
     },
@@ -423,7 +423,7 @@
     "_useOriginalSize": false,
     "_string": "<-",
     "_N$string": "<-",
-    "_fontSize": 20,
+    "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": false,
     "_N$file": null,
@@ -748,7 +748,7 @@
   {
     "__type__": "cc.Node",
     "_name": "btnRight",
-    "_objFlags": 512,
+    "_objFlags": 0,
     "_parent": {
       "__id__": 3
     },
@@ -786,8 +786,8 @@
       "__type__": "TypedArray",
       "ctor": "Float32Array",
       "array": [
-        -190,
-        -184.052001953125,
+        -215.0970001220703,
+        -246.79400634765625,
         0,
         0,
         0,
@@ -814,7 +814,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Background",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 16
     },
@@ -883,7 +883,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Label",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 17
     },
@@ -958,7 +958,7 @@
     "_useOriginalSize": false,
     "_string": "->",
     "_N$string": "->",
-    "_fontSize": 20,
+    "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": false,
     "_N$file": null,
@@ -1128,7 +1128,7 @@
   {
     "__type__": "cc.Node",
     "_name": "btnStop",
-    "_objFlags": 512,
+    "_objFlags": 0,
     "_parent": {
       "__id__": 3
     },
@@ -1166,8 +1166,8 @@
       "__type__": "TypedArray",
       "ctor": "Float32Array",
       "array": [
-        -283,
-        -184.052001953125,
+        -308.09698486328125,
+        -246.79400634765625,
         0,
         0,
         0,
@@ -1194,7 +1194,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Background",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 24
     },
@@ -1263,7 +1263,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Label",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 25
     },
@@ -1338,7 +1338,7 @@
     "_useOriginalSize": false,
     "_string": "X",
     "_N$string": "X",
-    "_fontSize": 20,
+    "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": false,
     "_N$file": null,
@@ -1508,7 +1508,7 @@
   {
     "__type__": "cc.Node",
     "_name": "btnJump",
-    "_objFlags": 512,
+    "_objFlags": 0,
     "_parent": {
       "__id__": 3
     },
@@ -1546,8 +1546,8 @@
       "__type__": "TypedArray",
       "ctor": "Float32Array",
       "array": [
-        -282,
-        -111.052001953125,
+        -307.09698486328125,
+        -173.79400634765625,
         0,
         0,
         0,
@@ -1574,7 +1574,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Background",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 32
     },
@@ -1643,7 +1643,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Label",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 33
     },
@@ -1888,7 +1888,7 @@
   {
     "__type__": "cc.Node",
     "_name": "btnAttack",
-    "_objFlags": 512,
+    "_objFlags": 0,
     "_parent": {
       "__id__": 3
     },
@@ -1926,9 +1926,9 @@
       "__type__": "TypedArray",
       "ctor": "Float32Array",
       "array": [
-        -152.66900634765625,
-        -111.15601348876953,
-        -342.18829345703125,
+        -177.76600646972656,
+        -173.8979949951172,
+        0,
         0,
         0,
         0,
@@ -1954,7 +1954,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Background",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 40
     },
@@ -2023,7 +2023,7 @@
   {
     "__type__": "cc.Node",
     "_name": "Label",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 41
     },
