@@ -93,8 +93,12 @@ cc.Class({
       var goUp = cc.moveBy(this.jumpDuration/2, cc.v2(0, this.jumpHeight)).easing(cc.easeOut(2.0));
       var goDown = cc.moveBy(this.jumpDuration/2, cc.v2(0, -this.jumpHeight)).easing(cc.easeIn(2.0));
       this.jumpSequence = cc.sequence(goUp, goDown);
-
-      console.log("Status.onLoad");
+      
+      var manager = cc.director.getCollisionManager();
+      manager.enabled = true;
+      manager.enabledDebugDraw = true;
+      manager.enabledDrawBoundingBox = true;
+      console.log("Status.onLoad",manager);
     },
 
     start () {

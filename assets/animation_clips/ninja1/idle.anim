@@ -72,6 +72,18 @@
             }
           }
         ]
+      },
+      "cc.BoxCollider": {
+        "offset": [
+          {
+            "frame": 0,
+            "value": {
+              "__type__": "cc.Vec2",
+              "x": 3.3,
+              "y": 201.4
+            }
+          }
+        ]
       }
     },
     "props": {

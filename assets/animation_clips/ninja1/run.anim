@@ -38,7 +38,7 @@
           {
             "frame": 0.06666666666666667,
             "value": {
-              "__uuid__": "0cd76f51-0427-4d5c-bb45-0a9934383e8e"
+              "__uuid__": "da5e4336-71e9-474e-af29-0f1aadda2835"
             }
           },
           {
@@ -69,6 +69,18 @@
             "frame": 0.15,
             "value": {
               "__uuid__": "2a48fd8e-b698-4ac5-895a-938e33dc883b"
+            }
+          }
+        ]
+      },
+      "cc.BoxCollider": {
+        "offset": [
+          {
+            "frame": 0,
+            "value": {
+              "__type__": "cc.Vec2",
+              "x": 31.7,
+              "y": 196.4
             }
           }
         ]
