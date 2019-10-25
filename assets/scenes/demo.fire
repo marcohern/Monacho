@@ -187,7 +187,7 @@
       "array": [
         0,
         0,
-        342.18829345703125,
+        350.2585144042969,
         0,
         0,
         0,
@@ -213,7 +213,7 @@
   {
     "__type__": "cc.Node",
     "_name": "btnLeft",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 3
     },
@@ -719,6 +719,9 @@
       },
       {
         "__uuid__": "e5de5897-00a2-4091-9895-f431faf498d6"
+      },
+      {
+        "__uuid__": "ca769b9c-5d5f-497d-8bae-22ed0a623f96"
       }
     ],
     "playOnLoad": true,
@@ -745,7 +748,7 @@
   {
     "__type__": "cc.Node",
     "_name": "btnRight",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 3
     },
@@ -1125,7 +1128,7 @@
   {
     "__type__": "cc.Node",
     "_name": "btnStop",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 3
     },
@@ -1505,7 +1508,7 @@
   {
     "__type__": "cc.Node",
     "_name": "btnJump",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 3
     },
@@ -1885,7 +1888,7 @@
   {
     "__type__": "cc.Node",
     "_name": "btnAttack",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 3
     },

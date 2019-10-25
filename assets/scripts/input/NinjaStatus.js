@@ -133,6 +133,10 @@ cc.Class({
 
     updateOnFootState()
     {
+      if (this.input.die)
+      {
+        this.die();
+      }
       if (this.input.up)
       {
         this.jump();
@@ -286,12 +290,38 @@ cc.Class({
       this.updateSlideState(dt);
     },
 
+    updateDieAnimation()
+    {
+      if (this.statusHasBeenUpdated())
+      {
+        this.animation.play('dead');
+      }
+    },
+
+    updateDieProperties(dt)
+    {
+
+    },
+
+    updateDieState(dt)
+    {
+
+    },
+
+    updateDying(dt)
+    {
+      this.updateDieAnimation();
+      this.updateDieProperties(dt);
+      this.updateDieState(dt);
+    },
+
     update (dt) {
       if (this.isGliding  ()) this.updateGliding(dt);
       if (this.isStanding ()) this.updateOnFoot(dt);
       if (this.isAttacking()) this.updateAttacking(dt);
       if (this.isJumping  ()) this.updateJumping(dt);
       if (this.isSliding  ()) this.updateSliding(dt);
+      if (this.isDying    ()) this.updateDying(dt);
       
       this._super(dt);
       this.prevStatus = this.status;

@@ -22,7 +22,8 @@ cc.Class({
         this.input.up != this.prevInput.up ||
         this.input.down != this.prevInput.down ||
         this.input.attack != this.prevInput.attack ||
-        this.input.fire != this.prevInput.fire);
+        this.input.fire != this.prevInput.fire ||
+        this.input.die != this.prevInput.die);
     },
 
     setInputValue(attr, value)
@@ -52,6 +53,9 @@ cc.Class({
           break;
         case cc.macro.KEY.f:
           this.setInputValue('fire',value);
+          break;
+        case cc.macro.KEY.q:
+          this.setInputValue('die',value);
           break;
       }
     },
@@ -103,7 +107,8 @@ cc.Class({
         up    : false,
         down  : false,
         attack: false,
-        fire  : false
+        fire  : false,
+        die   : false,
       };
 
       this.prevInput = {
@@ -112,7 +117,8 @@ cc.Class({
         up    : false,
         down  : false,
         attack: false,
-        fire  : false
+        fire  : false,
+        die   : false,
       };
 
       this.inputUpdated = false;
