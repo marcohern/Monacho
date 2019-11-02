@@ -2580,6 +2580,8 @@
     "_enabled": true,
     "runSpeed": 300,
     "glideSpeed": 100,
+    "fallSpeed": 400,
+    "glideDescentSpeed": 100,
     "minFloorLevel": 0,
     "_id": "b89179CIFLtblJmGITa8So"
   },

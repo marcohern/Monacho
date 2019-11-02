@@ -4,6 +4,7 @@ var Status = require('../controllers/Status');
 var NinjaAnimationController = require('../controllers/NinjaAnimationController');
 var NinjaScaleXController = require('../controllers/NinjaScaleXController');
 var NinjaXController = require('../controllers/NinjaXController');
+var NinjaYController = require('../controllers/NinjaYController');
 
 
 cc.Class({
@@ -12,6 +13,8 @@ cc.Class({
     properties: {
       runSpeed: 300,
       glideSpeed: 100,
+      fallSpeed: 400,
+      glideDescentSpeed: 200,
       minFloorLevel: 0,
     },
     
@@ -23,7 +26,8 @@ cc.Class({
       this.animCtrl = new NinjaAnimationController(this.getComponent(cc.Animation));
       this.scaleXCtrl = new NinjaScaleXController(this.node);
       this.xCtrl = new NinjaXController(this.node, this.runSpeed, this.glideSpeed);
-      this.ctrls = [this.animCtrl, this.scaleXCtrl, this.xCtrl];
+      this.yCtrl = new NinjaYController(this.node, this.fallSpeed, this.glideDescentSpeed, this.minFloorLevel);
+      this.ctrls = [this.scaleXCtrl, this.xCtrl, this.yCtrl, this.animCtrl];
       
       cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
       cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
