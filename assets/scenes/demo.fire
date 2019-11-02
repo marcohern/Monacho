@@ -2550,24 +2550,6 @@
     "_id": "bevYxSaBhJpIHSzVUh/qxv"
   },
   {
-    "__type__": "191ed80nBFEh5saTZGpnpns",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 48
-    },
-    "_enabled": true,
-    "runSpeed": 300,
-    "slideSpeed": 500,
-    "glideSpeedY": 100,
-    "jumpSpeedX": 100,
-    "jumpDuration": 0.6,
-    "jumpHeight": 200,
-    "attackDuration": 0.17,
-    "slideDuration": 0.5,
-    "_id": "5drXxrfslNW6CiUjzCD/zM"
-  },
-  {
     "__type__": "cc.BoxCollider",
     "_name": "",
     "_objFlags": 0,
@@ -2587,6 +2569,19 @@
       "height": 198.8
     },
     "_id": "246sFrf8RGJqc5kzFZvT42"
+  },
+  {
+    "__type__": "5354fwXflxAZ5CssZSqHqhH",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 48
+    },
+    "_enabled": true,
+    "runSpeed": 300,
+    "glideSpeed": 100,
+    "minFloorLevel": 0,
+    "_id": "b89179CIFLtblJmGITa8So"
   },
   {
     "__type__": "cc.PrefabInfo",

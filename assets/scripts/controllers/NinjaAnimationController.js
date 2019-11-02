@@ -8,15 +8,22 @@ cc.Class({
   },
 
   update (dt, input, status) {
-    if (status.isStanding() && input.updated())
+    if (input.updated())
     {
-      if (input.left || input.right)
+      if (status.isStanding())
       {
-        this.animation.play('run');
+        if (input.left || input.right)
+        {
+          this.animation.play('run');
+        }
+        else
+        {
+          this.animation.play('idle');
+        }
       }
-      else
+      if (status.isGliding())
       {
-        this.animation.play('idle');
+        this.animation.play('glide');
       }
     }
   },

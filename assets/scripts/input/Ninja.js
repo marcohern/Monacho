@@ -10,17 +10,19 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-      runSpeed: 300
+      runSpeed: 300,
+      glideSpeed: 100,
+      minFloorLevel: 0,
     },
     
     onLoad () {
       this.input = new Input();
       this.status = new Status();
-      this.status.stand();
+      this.status.glide();
 
       this.animCtrl = new NinjaAnimationController(this.getComponent(cc.Animation));
       this.scaleXCtrl = new NinjaScaleXController(this.node);
-      this.xCtrl = new NinjaXController(this.node, this.runSpeed);
+      this.xCtrl = new NinjaXController(this.node, this.runSpeed, this.glideSpeed);
       this.ctrls = [this.animCtrl, this.scaleXCtrl, this.xCtrl];
       
       cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
