@@ -7,10 +7,22 @@ cc.Class({
     this.node = arguments[0];
     this.runSpeed = arguments[1];
     this.glideSpeed = arguments[2];
+    this.frontSensor = false;
+  },
+
+  frontContact()
+  {
+    this.frontSensor = true;
+  },
+
+  frontClear()
+  {
+    this.frontSensor = false;
   },
 
   update (dt, input, status) {
     var xSpeed = 0;
+    if (this.frontSensor) return;
     if (status.isGliding()) {
       xSpeed = this.glideSpeed;
     }
