@@ -4,7 +4,6 @@ cc.Class({
   extends: Controller,
 
   ctor: function(animation) {
-    console.log("NinjaAnimationController.ctor", animation);
     this.animation = animation;
   },
 
