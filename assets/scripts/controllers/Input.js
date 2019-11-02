@@ -14,6 +14,10 @@ cc.Class({
     this.hasBeenUpdated = false;
   },
 
+  updated() {
+    return this.hasBeenUpdated;
+  },
+
   setValue(attr, value)
   {
     if (this[attr] === value) return;
