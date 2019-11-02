@@ -21,7 +21,6 @@ cc.Class({
   setValue(attr, value)
   {
     if (this[attr] === value) return;
-    console.log("Input.setValue",attr, value);
     this.hasBeenUpdated = true;
     this[attr] = value;
   },
