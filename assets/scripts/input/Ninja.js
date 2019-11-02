@@ -65,6 +65,14 @@ cc.Class({
       this.xCtrl.frontClear();
     },
 
+    onBottomContact(other, self, y) {
+      this.yCtrl.bottomContact();
+    },
+
+    onBottomClear(other, self, y) {
+      this.yCtrl.bottomClear();
+    },
+
     start () {
 
     },

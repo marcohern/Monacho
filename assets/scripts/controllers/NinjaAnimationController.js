@@ -16,6 +16,7 @@ cc.Class({
         else this.animation.play('idle');
       }
       else if (status.isGliding()) this.animation.play('glide');
+      else if (status.isFalling()) this.animation.play('fall');
     }
 
     if (input.updated())
