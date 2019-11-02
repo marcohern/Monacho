@@ -7,7 +7,7 @@ cc.Class({
     this.attack = false;
     this.fire = false;
     this.die = false;
-    this.hasBeenUpdated = false;
+    this.hasBeenUpdated = true;
   },
 
   reset() {
