@@ -9,7 +9,7 @@ cc.Class({
   },
 
   update (dt, input, status) {
-    if (status.isStanding() && input.hasBeenUpdated) {
+    if (status.isStanding() && input.updated()) {
       if (input.left)
       {
         this.node.scaleX = -this.sourceScaleX;

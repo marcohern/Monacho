@@ -52,5 +52,6 @@ cc.Class({
         ctrl.update(dt, this.input, this.status);
       }
       this.input.reset();
+      this.status.resetUpdate();
     },
 });

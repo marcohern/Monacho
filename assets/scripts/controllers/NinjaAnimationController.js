@@ -8,7 +8,8 @@ cc.Class({
   },
 
   update (dt, input, status) {
-    if (status.isStanding() && input.hasBeenUpdated) {
+    if (status.isStanding() && input.updated())
+    {
       if (input.left || input.right)
       {
         this.animation.play('run');

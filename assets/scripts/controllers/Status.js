@@ -12,19 +12,27 @@ cc.Class({
     this.DYING = 0x0100;
 
     this.status = this.NOTHING;
+    this.statusUpdated = false;
   },
 
   add(status)
   {
+    if (this.status|status === this.status) return;
+    this.statusUpdated = true;
     this.status |= status;
     console.log(status);
   },
 
   set(status)
   {
+    if (this.status === status) return;
+    this.statusUpdated = true;
     this.status = status;
     console.log(status);
   },
+
+  updated() { return this.statusUpdated; },
+  resetUpdate() { this.statusUpdated = false; },
 
   reset() { this.set(this.NOTHING); },
   stand() { this.set(this.STANDING); },
@@ -46,5 +54,5 @@ cc.Class({
   isSliding() { return this.status & this.SLIDING; },
   isFalling() { return this.status & this.FALLING; },
   isDying() { return this.status & this.DYING; },
-  
+
 });
