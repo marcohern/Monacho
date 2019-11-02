@@ -8,7 +8,12 @@ cc.Class({
   },
 
   update (dt, input, status) {
-    if (input.updated())
+    if (status.updated()) {
+      if (status.isStanding()) {
+        this.animation.play('idle');
+      }
+    }
+    if (input.updated() || status.updated())
     {
       if (status.isStanding())
       {
