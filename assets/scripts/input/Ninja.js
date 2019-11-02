@@ -21,6 +21,7 @@ cc.Class({
       this.animCtrl = new NinjaAnimationController(this.getComponent(cc.Animation));
       this.scaleXCtrl = new NinjaScaleXController(this.node);
       this.xCtrl = new NinjaXController(this.node, this.runSpeed);
+      this.ctrls = [this.animCtrl, this.scaleXCtrl, this.xCtrl];
       
       cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
       cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
@@ -47,9 +48,9 @@ cc.Class({
     },
 
     update (dt) {
-      this.animCtrl.update(dt, this.input, this.status);
-      this.xCtrl.update(dt, this.input, this.status);
-      this.scaleXCtrl.update(dt, this.input, this.status);
+      for(var ctrl of this.ctrls) {
+        ctrl.update(dt, this.input, this.status);
+      }
       this.input.reset();
     },
 });
