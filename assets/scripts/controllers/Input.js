@@ -10,16 +10,19 @@ cc.Class({
     this.hasBeenUpdated = false;
   },
 
+  reset() {
+    this.hasBeenUpdated = false;
+  },
+
   setValue(attr, value)
   {
-    console.log("Input.setValue",attr, value);
     if (this[attr] === value) return;
+    console.log("Input.setValue",attr, value);
     this.hasBeenUpdated = true;
     this[attr] = value;
   },
 
   setInput(event, value) {
-    this.hasBeenUpdated = false;
     switch(event.keyCode) {
       case cc.macro.KEY.a:
         this.setValue('left',value);

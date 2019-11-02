@@ -2,6 +2,7 @@
 var Input = require('../controllers/Input');
 var Status = require('../controllers/Status');
 var NinjaXController = require('../controllers/NinjaXController');
+var NinjaAnimationController = require('../controllers/NinjaAnimationController');
 cc.Class({
     extends: cc.Component,
 
@@ -14,6 +15,7 @@ cc.Class({
       this.status = new Status();
       this.status.stand();
 
+      this.animCtrl = new NinjaAnimationController(this.getComponent(cc.Animation));
       this.xCtrl = new NinjaXController(this.node, this.runSpeed);
       
       cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
@@ -41,6 +43,8 @@ cc.Class({
     },
 
     update (dt) {
+      this.animCtrl.update(dt, this.input, this.status);
       this.xCtrl.update(dt, this.input, this.status);
+      this.input.reset();
     },
 });
