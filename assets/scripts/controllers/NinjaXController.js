@@ -3,11 +3,10 @@ var Controller = require('Controller');
 cc.Class({
   extends: Controller,
 
-  ctor: function(node, runSpeed=0, glideSpeed=0) {
-    console.log("NinjaXController.ctor", node);
-    this.node = node;
-    this.runSpeed = runSpeed;
-    this.glideSpeed = glideSpeed;
+  ctor() {
+    this.node = arguments[0];
+    this.runSpeed = arguments[1];
+    this.glideSpeed = arguments[2];
   },
 
   update (dt, input, status) {

@@ -3,13 +3,13 @@ var Controller = require('Controller');
 cc.Class({
   extends: Controller,
 
-  ctor: function(node) {
-    this.node = node;
+  ctor() {
+    this.node = arguments[0];
     this.sourceScaleX = this.node.scaleX;
   },
 
   update (dt, input, status) {
-    if (status.isStanding() && input.updated()) {
+    if (status.isStanding()) {
       if (input.left)
       {
         this.node.scaleX = -this.sourceScaleX;
