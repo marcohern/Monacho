@@ -17,33 +17,33 @@ cc.Class({
 
   add(status)
   {
-    if (this.status|status === this.status) return;
+    if (this.status|status === this.status) return false;
     this.statusUpdated = true;
     this.status |= status;
-    console.log(status);
+    return true;
   },
 
   set(status)
   {
-    if (this.status === status) return;
+    if (this.status === status) return false;
     this.statusUpdated = true;
     this.status = status;
-    console.log(status);
+    return true;
   },
 
   updated() { return this.statusUpdated; },
   resetUpdate() { this.statusUpdated = false; },
 
-  reset() { this.set(this.NOTHING); },
-  stand() { this.set(this.STANDING); },
-  jump() { this.set(this.JUMPING); },
-  glide() { this.set(this.GLIDING); },
-  attack() { this.set(this.ATTACKING); },
-  fire() { this.set(this.FIRING); },
-  climb() { this.set(this.CLIMBING); },
-  slide() { this.set(this.SLIDING); },
-  fall() { this.set(this.FALLING); },
-  die() { this.set(this.DYING); },
+  reset() { return this.set(this.NOTHING); },
+  stand() { return this.set(this.STANDING); },
+  jump() { return this.set(this.JUMPING); },
+  glide() { return this.set(this.GLIDING); },
+  attack() { return this.set(this.ATTACKING); },
+  fire() { return this.set(this.FIRING); },
+  climb() { return this.set(this.CLIMBING); },
+  slide() { return this.set(this.SLIDING); },
+  fall() { return this.set(this.FALLING); },
+  die() { return this.set(this.DYING); },
 
   isStanding() { return this.status & this.STANDING; },
   isJumping() { return this.status & this.JUMPING; },
