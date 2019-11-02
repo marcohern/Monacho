@@ -17,6 +17,14 @@ cc.Class({
   updated() {
     return this.hasBeenUpdated;
   },
+  
+  updatedLeftOrRight() {
+    return this.updated() && (this.left || this.right);
+  },
+  
+  leftOrRight() {
+    return this.left || this.right;
+  },
 
   setValue(attr, value)
   {
