@@ -27,7 +27,7 @@ cc.Class({
       this.scaleXCtrl = new NinjaScaleXController(this.node);
       this.xCtrl = new NinjaXController(this.node, this.runSpeed, this.glideSpeed);
       this.yCtrl = new NinjaYController(this.node, this.fallSpeed, this.glideDescentSpeed, this.minFloorLevel);
-      this.ctrls = [this.scaleXCtrl, this.xCtrl, this.yCtrl, this.animCtrl];
+      this.ctrls = [this.scaleXCtrl, this.xCtrl, this.yCtrl];
       
       cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
       cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
@@ -55,8 +55,10 @@ cc.Class({
 
     update (dt) {
       for(var ctrl of this.ctrls) {
-        ctrl.update(dt, this.input, this.status);
+        var r = ctrl.update(dt, this.input, this.status);
+        //if (r) return;
       }
+      this.animCtrl.update(dt, this.input, this.status);
       this.input.reset();
       this.status.resetUpdate();
     },
