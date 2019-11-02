@@ -23,6 +23,9 @@ cc.Class({
       this.status = new Status();
       this.status.glide();
 
+      this.frontSensor = false;
+
+
       this.animCtrl = new NinjaAnimationController(this.getComponent(cc.Animation));
       this.scaleXCtrl = new NinjaScaleXController(this.node);
       this.xCtrl = new NinjaXController(this.node, this.runSpeed, this.glideSpeed);
@@ -47,6 +50,19 @@ cc.Class({
 
     onKeyUp(event) {
       this.input.setInput(event, false);
+    },
+
+    onCollisionEnter(other, self)
+    {
+      console.log("Ninja.onCollisionEnter");
+    },
+
+    onFrontContact(other, self, x) {
+      this.xCtrl.frontContact();
+    },
+
+    onFrontClear(other, self, x) {
+      this.xCtrl.frontClear();
     },
 
     start () {

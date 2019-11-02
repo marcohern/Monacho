@@ -10,7 +10,7 @@
     ],
     [
       false,
-      true,
+      false,
       true
     ],
     [
@@ -42,6 +42,5 @@
     "live": {
       "enable": false
     }
-  },
-  "start-scene": "current"
+  }
 }
