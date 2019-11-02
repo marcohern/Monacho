@@ -12,7 +12,7 @@ cc.Class({
     this.DYING = 0x0100;
 
     this.status = this.NOTHING;
-    this.statusUpdated = false;
+    this.statusUpdated = true;
   },
 
   add(status)
